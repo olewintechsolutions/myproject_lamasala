@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- divinectorweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated Dropdown menu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head> 
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  * {
+	margin: 0; 
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+header {
+	width: 100%;
+	background: url('');
+	background-position: center center;
+	height: 100vh;
+}
+header #main-menu {
+	background: #222;
+	float: left;
+	height: 60px;
+	line-height: 30px;
+	width: 100%;
+}
+header nav#menu-area {
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	width: 900px;
+}
+header nav#menu-area ul li {
+	float: left;
+	position: relative;
+	font-size: 15px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	text-align: center;
+	text-transform: uppercase;
+}
+header nav#menu-area ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	line-height: 60px;
+}
+header nav#menu-area ul li:hover>a {
+	background: #555555;
+}
+header nav#menu-area ul li ul.submenu-1 {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	background: #222;
+	width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+}
+header nav#menu-area ul li ul.submenu-1 li {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin-top: -15px;
+	padding: 0;
+	width: 180px;
+	transition: opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+}
+header nav#menu-area ul li:hover ul.submenu-1 {
+	opacity: 1;
+	visibility: visible;
+}
+header nav#menu-area ul li:hover ul.submenu-1 li {
+	margin-top: 0;
+	opacity: 1;
+}
+header nav#menu-area ul li ul.submenu-1 li ul.submenu-2 {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 61px;
+	top: 0px;
+	background: #222;
+	width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+}
+ul.submenu-1 li ul.submenu-2 li {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	opacity: 1;
+}
+header nav#menu-area ul li ul.submenu-1 li:hover ul.submenu-2 {
+	opacity: 1;
+	left: 180px;
+	visibility: visible;
+}
+
+
+</style>
+<body>
+	<header>
+		<div id="main-menu">
+			<nav id="menu-area">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Services</a>
+						<ul class="submenu-1">
+							<li><a href="#">Graphics</a></li>
+							<li><a href="#">SEO</a></li>
+							<li><a href="#">Web Design</a>
+								<ul class="submenu-2">
+									<li><a href="#">WordPress</a></li>
+									<li><a href="#">Laravel</a></li>
+									<li><a href="#">html / css</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="">Portfolio</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>  
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer>
+</body>
+</html>
